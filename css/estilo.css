@@ -1,0 +1,579 @@
+/* Parámetros globales de Maquetación y Estilo */
+
+h1, h3, a {
+    font-family: 'Ruda', sans-serif;
+}
+
+h4, p {
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Estilo propio del sitio web */
+aside#menu-cortina {
+    width: 100%;                /* 100% / <= 300px */
+    height: 100%;
+    display: block;
+    margin: 0;
+    float: none;
+    position: fixed;
+    
+    top: 0;
+    right: -100%;                    /* left / right */
+    z-index: 99991;
+    
+    background: rgba(65, 9, 9, 0.79);
+}
+
+aside#menu-cortina a#abrir { }
+aside#menu-cortina a#abrir i { }
+aside#menu-cortina a#abrir:hover { }
+aside#menu-cortina a#abrir:hover i { }
+
+aside#menu-cortina a#cerrar { }
+aside#menu-cortina a#cerrar i { }
+aside#menu-cortina a#cerrar:hover { }
+aside#menu-cortina a#cerrar:hover i { }
+
+aside#menu-cortina nav#menu-idioma-movil { }
+aside#menu-cortina nav#menu-idioma-movil a { }
+aside#menu-cortina nav#menu-idioma-movil a:hover { }
+aside#menu-cortina nav#menu-idioma-movil span { }
+
+
+
+header {
+    width: 100%;            /*Anchura*/
+    height: 150px;          /*Altura*/
+    display: block;         /*Despliegue*/
+    margin: 0;              /*Margen*/
+    float: none;            /*Lado hacia el que flota*/
+    position: fixed;        /* fixed / absolute / relative / sticky(JS) */
+    
+    top: 0;                 /*Solo sirven para posiciones fijas y absolutas*/
+    left: 0;
+    z-index: 99990;
+    
+    background: #000;    /*Color de fondo*/
+}
+
+header article {
+    width: 1200px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+
+header article a#logo {
+    width: 305px;
+    height: 35px;
+    display: block;
+    margin: auto;
+    top: 30px;
+    float: none;
+    position: relative;
+    
+    transition: all 0.2s ease-in;
+}
+header article a#logo:hover {
+    opacity: 0.5;
+    transition: all 0.2s ease-in;
+}
+header article a#logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+
+header article nav#menu-principal {
+    width: 500px;
+    height: 35px;
+    display: block;
+    margin: auto;
+    top: 70px;
+    float: none;
+    position: relative;
+}
+header article nav#menu-principal a { 
+    padding: 0 21px 0 0;
+    color: #fff;
+    
+    transition: all 0.2s ease-in;
+}
+header article nav#menu-principal a:hover { 
+    opacity: 0.5;
+    transition: all 0.2s ease-in;
+}
+
+
+
+header article nav#menu-idioma {
+    width: 100px;
+    height: 35px;
+    display: inline-block;
+    margin: auto;
+    top: -25px;
+    float: right;
+    position: relative;
+}
+header article nav#menu-idioma a { 
+    color: #fff;
+    
+    transition: all 0.2s ease-in;
+}
+header article nav#menu-idioma a:hover { 
+    opacity: 0.5;
+    transition: all 0.2s ease-in;
+}
+header article nav#menu-idioma span { 
+    color: #fff;
+}
+
+
+
+header article nav#menu-redes {
+    width: 115px;
+    height: 35px;
+    display: block;
+    margin: 32px 0;
+    float: right;
+    position: relative;
+}
+
+
+main {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 150px auto 0 auto;
+    float: none;
+    position: relative;
+}
+
+/*CSS INDEX*/
+main section#fila-sunsplashs {
+    width: 100%;
+    height: 500px;
+    display: block;
+    position: relative;
+    float: none;
+    margin: 0 auto;
+    background: #000;
+}
+main section#fila-sunsplashs article {
+    width: 80%;
+    height: 500px;
+    display: block;
+    position: relative;
+    float: none;
+    margin: 0 auto;
+}
+main section#fila-sunsplashs article figure {
+    width: 100%;
+    height: 500px;
+    display: block;
+    position: relative;
+    float: none;
+    margin: 0 auto;
+}
+main section#fila-sunsplashs article figure img {
+    width: 500px;
+    height: auto;
+    display: block;
+    position: relative;
+    float: left;
+    margin: 70px auto 0 0;
+}
+main section#fila-sunsplashs article figure a {
+    display: block;
+    position: relative;
+    float: left;
+    margin: 260px 0 0 55px;
+    font-size: 1.65em;
+    color: #fff;
+    
+    transition: all 0.2s ease-in;
+}
+main section#fila-sunsplashs article figure a:hover {
+    opacity: 0.5;
+    transition: all 0.2s ease-in;
+}
+main section#fila-sunsplashs article figure a i {
+    font-weight: 900;
+    padding: 0 0 0 20px;
+    
+    transition: all 0.2s ease-in;
+}
+main section#fila-sunsplashs article figure a:hover i {
+    opacity: 0.5;
+    transition: all 0.2s ease-in;
+}
+main section#fila-sunsplashs article figure p {
+    width: 350px;
+    display: block;
+    position: relative;
+    float: left;
+    margin: 30px 0 0 55px;
+    color: #fff;
+    font-size: 1.125em;
+}
+
+main section#fila-trabajos {
+    width: 100%;
+    height: 600px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    float: none;
+}
+main section#fila-trabajos hr {
+    width: 80%;
+    border: 1px solid;
+}
+main section#fila-trabajos article#titulo-trabajos {
+    width: 100%;
+    height: 150px;
+    display: block;
+    position: relative;
+    float: none;
+    margin: 100px 0 0 0;
+}
+main section#fila-trabajos article#titulo-trabajos figure {
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    margin: 0 175px 0 0;
+    float: right;
+}
+main section#fila-trabajos article#titulo-trabajos figure h3 {
+    font-size: 2.25em;
+}
+main section#fila-trabajos article#categoria-trabajos {
+    width: 100%;
+    height: 450px;
+    display: block;
+    position: relative;
+    float: none;
+    margin: 0 auto;
+}
+main section#fila-trabajos article#categoria-trabajos nav {
+    width: 80%;
+    height: 400px;
+    display: block;
+    position: relative;
+    float: none;
+    margin: 0 auto;
+}
+main section#fila-trabajos article#categoria-trabajos nav figure  {
+    width: 45%;
+    height: 400px;
+    display: block;
+    position: relative;
+    float: left;
+    margin: 0 25px 0;
+}
+main section#fila-trabajos article#categoria-trabajos nav figure a {
+    width: 455px;
+    height: 350px;
+    display: block;
+    position: relative;
+    float: left;
+    margin: 0 auto;
+    
+    transition: all 0.2s ease-in;
+}
+main section#fila-trabajos article#categoria-trabajos nav figure a:hover {
+    opacity: 0.5;
+    transition: all 0.2s ease-in;
+}
+main section#fila-trabajos article#categoria-trabajos nav figure a span {
+    width: 200px;
+    display: block;
+    position: relative;
+    float: none;
+    color: #fff;
+    top: -175px;
+    left: 160px;
+    font-size: 1.75em;
+}
+main section#fila-trabajos article#categoria-trabajos nav figure a img {
+    width: 100%;
+    height: auto;
+}
+
+main section#fila-habilidades {
+    width: 100%;
+    height: 650px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    float: none;
+}
+main section#fila-habilidades article#titulo-habilidades {
+   width: 100%;
+    height: 100px;
+    display: block;
+    position: relative;
+    float: none;
+    margin: 50px 0 0 0;
+}
+main section#fila-habilidades article#titulo-habilidades figure {
+    width: 230px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 0 175px;
+    float: left;
+}
+main section#fila-habilidades article#titulo-habilidades figure h3 {
+        font-size: 2.25em;
+}
+main section#fila-habilidades article#habilidades {
+    width: 100%;
+    height: 450px;
+    display: block;
+    position: relative;
+    float: none;
+    margin: 20px 0 0 0;
+}
+main section#fila-habilidades article#habilidades figure {
+    width: 70%;
+    height: 200px;
+    display: block;
+    position: relative;
+    float: none;
+    margin: 50px auto;
+}
+main section#fila-habilidades article#habilidades figure div.titulo-habilidad {
+    width: 100%;
+    height: 90px;
+    display: block;
+    position: relative;
+    float: none;
+    margin: 20px auto;
+}
+main section#fila-habilidades article#habilidades figure div.titulo-habilidad a {
+    width: 68px;
+    height: 58px;
+    display: block;
+    position: relative;
+    float: none;
+    margin: 12px auto;
+}
+main section#fila-habilidades article#habilidades figure div.titulo-habilidad a i {
+    font-size: 3.65em;
+}
+main section#fila-habilidades article#habilidades figure div.titulo-habilidad h4 {
+    margin: 5px auto;
+    font-size: 1.65em;
+    font-style: italic;
+    text-align: center;
+}
+main section#fila-habilidades article#habilidades figure div.texto-habilidad {
+    width: 100%;
+    height: 46px;
+    display: block;
+    position: relative;
+    float: none;
+}
+main section#fila-habilidades article#habilidades figure div.texto-habilidad p {
+    font-size: 1.25em;
+    font-style: italic;
+    text-align: left;
+    width: 80%;
+    margin: 22px auto 0;
+}
+main section#fila-habilidades article#habilidades figure div.texto-habilidad div.barra-contenedor {
+    width: 90%;
+    height: 20px;
+    display: block;
+    position: relative;
+    float: none;
+    margin: 20px auto 0;
+    background: #cacaca;
+    border-radius: 17px;
+}
+main section#fila-habilidades article#habilidades figure div.texto-habilidad div.barra-contenedor div#barra-editorial.barra-contenido {
+    width: 60%;
+    height: 12px;
+    display: block;
+    position: relative;
+    float: none;
+    top: 4px;
+    left: 9px;
+    background: #000;
+    border-radius: 25px;
+}
+main section#fila-habilidades article#habilidades figure div.texto-habilidad div.barra-contenedor div#barra-audiovisual.barra-contenido {
+    width: 75%;
+    height: 12px;
+    display: block;
+    position: relative;
+    float: none;
+    top: 4px;
+    left: 9px;
+    background: #000;
+    border-radius: 25px;
+}
+
+/*CSS ACERCA DE MI*/
+main section#fila-acerca-de-mi {}
+main section#fila-acerca-de-mi article {}
+main section#fila-acerca-de-mi article figure {}
+main section#fila-acerca-de-mi article figure img {}
+main section#fila-acerca-de-mi article figure h2 {}
+main section#fila-acerca-de-mi article figure p {}
+
+/*CSS EDITORIAL*/
+main section#fila-editorial {}
+main section#fila-editorial article#titulo-editorial {}
+main section#fila-editorial article#titulo-editorial h2 {}
+main section#fila-editorial article#titulo-editorial p {}
+
+main section#fila-editorial article#contenido-editorial {}
+main section#fila-editorial article#contenido-editorial figure {}
+main section#fila-editorial article#contenido-editorial figure a {}
+main section#fila-editorial article#contenido-editorial figure a img {}
+
+/*CSS AUDIOVISUAL*/
+main section#fila-audiovisual {}
+main section#fila-audiovisual article#titulo-audiovisual {}
+main section#fila-audiovisual article#titulo-audiovisual h2 {}
+main section#fila-audiovisual article#titulo-audiovisual p {}
+
+main section#fila-audiovisual article#contenido-audiovisual {}
+main section#fila-audiovisual article#contenido-audiovisual figure {}
+main section#fila-audiovisual article#contenido-audiovisual figure iframe {}
+
+
+footer {
+    width: 100%;
+    height: 180px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: #000;
+}
+
+footer nav#menu-redes {
+    width: 300px;
+    height: 70px;
+    display: inline-block;
+    margin: 0 0 0 220px;
+    top: 50px;
+    left: 20px;
+    float: left;
+    position: relative;
+}
+footer nav#menu-redes a {
+    position: relative;
+    float: left;
+    margin: 0 0 0 12px;
+    padding: 10px 0;
+    color: #fff;
+    font-family: 'Ropa Sans', sans-serif;
+    font-style: italic;
+    
+    transition: all 0.2s ease-in;
+}
+footer nav#menu-redes a:hover {
+    opacity: 0.5;
+    transition: all 0.2s ease-in;
+}
+footer nav#menu-redes a i {
+    padding: 0 10px 0 0;
+    
+    transition: all 0.2s ease-in;
+}
+footer nav#menu-redes a i:hover {
+    opacity: 0.5;
+    transition: all 0.2s ease-in;
+}
+footer a#logo-footer {
+    width: 305px;
+    height: 35px;
+    display: block;
+    margin: 60px 0 0 195px;
+    float: left;
+    position: relative;
+    transition: all 0.2s ease-in;
+}
+footer a#logo-footer:hover {
+    opacity: 0.5;
+    transition: all 0.2s ease-in;
+}
+footer a#logo-footer img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+
+/* Zona Responsive */
+
+/*
+Escritorio y TV         >= 1200px
+Tablets                 <= 1199px --- >= 500px
+Móviles                 <= 499px --- >= 340px
+*/
+
+@media only screen and (max-width: 1199px){    /*Tablets*/
+    aside#menu-cortina {
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 1099px){
+    
+}
+
+@media only screen and (max-width: 999px){
+    
+}
+
+@media only screen and (max-width: 899px){
+    
+}
+
+@media only screen and (max-width: 799px){
+    
+}
+
+@media only screen and (max-width: 699px){
+    
+}
+
+@media only screen and (max-width: 599px){
+    
+}
+
+@media only screen and (max-width: 499px){     /*Móviles*/
+    
+}
+
+@media only screen and (max-width: 449px){
+    
+}
+
+@media only screen and (max-width: 399px){
+    
+}
+
+@media only screen and (max-width: 349px){
+    
+}
+
